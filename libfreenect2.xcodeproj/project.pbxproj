@@ -1,0 +1,1945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		25A86AAC58A745BD9DCBE082 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F6F9ACA98CF345CDA399D1E2 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				A51DAE44C49E4BE1958F70EA /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		3C6EDD8D32CE456A99A54488 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D1E801B7B0824EE988E00A19 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E94F6B11945791DCD79B2DA5 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		4C4D3832E9DD43A8A5C10B68 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2FA274D85031405982E383F9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6C4E32CD67A951C9F91189A3 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				0FEE4382CE644862A2DC7C92 /* PBXTargetDependency */,
+				D46FFFB8C66443368719D0C9 /* PBXTargetDependency */,
+				26CF14C15B9B48E7A83174B6 /* PBXTargetDependency */,
+				F3D200B075224B1E97065727 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00C53E80C5444365A9E3EF33 /* allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD50965258343CAB9E559D9 /* allocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01543992C23D4B3CA6257620 /* frame_listener_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D6FB2B46E8478E801C96DF /* frame_listener_impl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03C064BB12844A01A68A5446 /* registration.h in Headers */ = {isa = PBXBuildFile; fileRef = A8233260E8864F2E8567676C /* registration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0738DF966C2E47AF9345000B /* usb_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 816150EF91854566AA5A7A36 /* usb_control.cpp */; };
+		0931CA21210349348BF7ECE5 /* flextGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F95842DA91040E28272CFB8 /* flextGL.cpp */; };
+		13212334C187429BA7FB3614 /* usb_control.h in Headers */ = {isa = PBXBuildFile; fileRef = CBFFE560747D468AA66632CE /* usb_control.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18390FA697D3473B96BEFECD /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 40674ED628324324B072503F /* threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27A5C69350994136B0B00F38 /* rgb_packet_stream_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 200A1019E08547BFB08BE637 /* rgb_packet_stream_parser.cpp */; };
+		333A862486444DF29C7868EF /* logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1808DAAE150C491196138B2D /* logging.cpp */; };
+		391A376440E24FD1B0E6A0A1 /* vt_rgb_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB35EC4EC9194F8B8401F0B8 /* vt_rgb_packet_processor.cpp */; };
+		3CC5BCB5B400442A86B60ABB /* event_loop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F29FD5C4F933464CB8C67721 /* event_loop.cpp */; };
+		3D50B8666C4E4DB994C4823D /* transfer_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D5EE76DA164466B0FB8376 /* transfer_pool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42326B68E21F4FD78C9555F6 /* response.h in Headers */ = {isa = PBXBuildFile; fileRef = F6CAEB99594D42719BCFBC7A /* response.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4633857A75794B659CB55D11 /* depth_packet_processor.h in Headers */ = {isa = PBXBuildFile; fileRef = 09396C6089114EF9B2FB63C3 /* depth_packet_processor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481F544F107140519A0128B7 /* rgb_packet_stream_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF7699665DA4996A55CD7E2 /* rgb_packet_stream_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E3E7B3BC134B378CADA75B /* color_settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 161C0A48FBF74525B2C23921 /* color_settings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D2BCFAA98EF432A821B2272 /* transfer_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6639D1E4BF584AA38C45FDBE /* transfer_pool.cpp */; };
+		5E8541E7BAEC4688BED66D48 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 13361D229927437BB4812738 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E35F2973C046A3AA7709C0 /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A67B0EA9454053A766F2C5 /* resource.cpp */; };
+		63EA6B32855A40F4A51DFE85 /* frame_listener.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5521ABD2E08641FDB6312F8C /* frame_listener.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		650B81E1E0104C9A830C39DB /* viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D08FC581224DBB944E0F84 /* viewer.cpp */; };
+		69A2C3DB19124FE893BB7971 /* rgb_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB71AF8C85834668863085DF /* rgb_packet_processor.cpp */; };
+		6B14C275F94A4074B7942DEA /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = B245A2AF128843FAA83BA394 /* logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BFF5EC6CF834F4EB7BCC563 /* resource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE7C53597034224BFEED6E6 /* resource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		806DCE0070F0449EBEA79F74 /* flextGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9F7F53FF60C498DB92269FD /* flextGL.cpp */; };
+		8116428955AD4BB1A9AD8792 /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = F152A8971D2B479FADE1D56C /* logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8709C415DFB64436A829AF1F /* rgb_packet_processor.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C2C67A6BA24DC2B31C9DA3 /* rgb_packet_processor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		890A973967DC4ADEAF8CD70A /* packet_pipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB87129FF95423F97834753 /* packet_pipeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F252A4D0D2842F885724617 /* libfreenect2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05A077ABE8D24E7280B601C6 /* libfreenect2.cpp */; };
+		8FBD0DC9706340FA85B5E3A3 /* led_settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 82D76A740E0C47379A9D7CD5 /* led_settings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904DD00A46A8429BA4092344 /* command.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E51080ADBA4D9893517BFC /* command.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		989962ACCA12420ABC2DE93C /* packet_pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A48F9F4FD74B41C493E1DB05 /* packet_pipeline.cpp */; };
+		9AB2206FA1184983BEAF57DA /* frame_listener_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76F6F4AD54234868A8D56715 /* frame_listener_impl.cpp */; };
+		9B35E8820BFA4E719B840521 /* depth_packet_stream_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = E9697B63A8364DE98F84C4A2 /* depth_packet_stream_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6F26EDB01C64C129F34DFA6 /* opengl_depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A55619CCA4DF5B6DB09F3 /* opengl_depth_packet_processor.cpp */; };
+		ABA53D3B85484E2896E7B286 /* event_loop.h in Headers */ = {isa = PBXBuildFile; fileRef = E5551808DB644F8AAD679078 /* event_loop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44C0594CAEB493CBB10E078 /* async_packet_processor.h in Headers */ = {isa = PBXBuildFile; fileRef = B00105C8E31B4938B97AB84D /* async_packet_processor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5E8A4A06BA747D49079AD4E /* Protonect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 642CF87EECA74857A2BD63C9 /* Protonect.cpp */; };
+		BBD52EF34F344A98972E6F0B /* turbo_jpeg_rgb_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2047FD348D88452AA721C066 /* turbo_jpeg_rgb_packet_processor.cpp */; };
+		BCC33E03B0154423B347E61A /* cpu_depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9952F3BB68141AEBF612ED1 /* cpu_depth_packet_processor.cpp */; };
+		BE0607C6C54A43FF8AED12FD /* resources.inc.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CAF7A726654BD8BE1A1253 /* resources.inc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF3173EB61AB4D2688219816 /* opencl_kde_depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 062BEDC8C32A4B829CFC84FE /* opencl_kde_depth_packet_processor.cpp */; };
+		BF6E50DEC65643469F124149 /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C70CB214810D45E7B394A939 /* allocator.cpp */; };
+		C02FE0D13973456C9B4132E7 /* export.h in Headers */ = {isa = PBXBuildFile; fileRef = 88165E54278D4F8FBA08233B /* export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0FCD1A70B5E49F891FB7564 /* opencl_depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAD191AA8575412796C17521 /* opencl_depth_packet_processor.cpp */; };
+		C567D88FA8934DDC9918FF6C /* packet_processor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B180AAB2D2D48FFB2AE9BD8 /* packet_processor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92FBDAE7F634DEC84F7A36F /* depth_packet_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCC33D511F0E4FEBA4E6889C /* depth_packet_processor.cpp */; };
+		CC598D749C2E4364B6E6AF20 /* depth_packet_stream_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCF52641F59043928B504A25 /* depth_packet_stream_parser.cpp */; };
+		CD1DDF5CE64547B784BCA0C1 /* tinythread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41659E463B74F8D98E1E831 /* tinythread.cpp */; };
+		DC1E49167F6348F9831A16B5 /* generate_resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE34EF59F424C6E8CB38CEB /* generate_resources.cpp */; };
+		E7FA54001335466F81C5FD25 /* command_transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7B34D5A6C774C35863995BB /* command_transaction.cpp */; };
+		EF3B38648AEA4C61A06F5D62 /* command_transaction.h in Headers */ = {isa = PBXBuildFile; fileRef = E528389FCB504A6D93460658 /* command_transaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4BA470EE5064B28A2807939 /* libfreenect2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B1D42CF010CB4AD7B97F800F /* libfreenect2.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75D53511B984D78ACE7BCEC /* registration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F391CFEE45B48FA3505E /* registration.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		390FC41A3FDD4600A8A3E29B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C6EDD8D32CE456A99A54488;
+			remoteInfo = ZERO_CHECK;
+		};
+		4282E7DDA4C244A5BD9F805C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C4D3832E9DD43A8A5C10B68;
+			remoteInfo = ALL_BUILD;
+		};
+		5F880249DF53432A8B3EC3A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C6EDD8D32CE456A99A54488;
+			remoteInfo = ZERO_CHECK;
+		};
+		85CF49727D874EC19A42F00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21660968B3C74A4998023DD0;
+			remoteInfo = freenect2;
+		};
+		9C7B2C1B81E74DEDB4A58223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C6EDD8D32CE456A99A54488;
+			remoteInfo = ZERO_CHECK;
+		};
+		AE0F4F9FE4AD44339AFDB908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21660968B3C74A4998023DD0;
+			remoteInfo = freenect2;
+		};
+		B9ACE45DFC6548F5BB16BF59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7E95368A5F4DCFAEFCD83F;
+			remoteInfo = Protonect;
+		};
+		F5CBBC11D16D4648A6050276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951DAD70300346A2B81CCA33;
+			remoteInfo = generate_resources_tool;
+		};
+		FD02D7B86A084B0EB4FAF4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 538CF914E5754FD69BB6B542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 951DAD70300346A2B81CCA33;
+			remoteInfo = generate_resources_tool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A077ABE8D24E7280B601C6 /* libfreenect2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = libfreenect2.cpp; path = src/libfreenect2.cpp; sourceTree = SOURCE_ROOT; };
+		062BEDC8C32A4B829CFC84FE /* opencl_kde_depth_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opencl_kde_depth_packet_processor.cpp; path = src/opencl_kde_depth_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		07068CF26A7545528DB01185 /* OpenCL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
+		09396C6089114EF9B2FB63C3 /* depth_packet_processor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = depth_packet_processor.h; path = include/internal/libfreenect2/depth_packet_processor.h; sourceTree = SOURCE_ROOT; };
+		13361D229927437BB4812738 /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = libfreenect2/config.h; sourceTree = SOURCE_ROOT; };
+		161C0A48FBF74525B2C23921 /* color_settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = color_settings.h; path = include/libfreenect2/color_settings.h; sourceTree = SOURCE_ROOT; };
+		1808DAAE150C491196138B2D /* logging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logging.cpp; path = src/logging.cpp; sourceTree = SOURCE_ROOT; };
+		1AE7C53597034224BFEED6E6 /* resource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = resource.h; path = include/internal/libfreenect2/resource.h; sourceTree = SOURCE_ROOT; };
+		1AF7699665DA4996A55CD7E2 /* rgb_packet_stream_parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = rgb_packet_stream_parser.h; path = include/internal/libfreenect2/rgb_packet_stream_parser.h; sourceTree = SOURCE_ROOT; };
+		200A1019E08547BFB08BE637 /* rgb_packet_stream_parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rgb_packet_stream_parser.cpp; path = src/rgb_packet_stream_parser.cpp; sourceTree = SOURCE_ROOT; };
+		2047FD348D88452AA721C066 /* turbo_jpeg_rgb_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = turbo_jpeg_rgb_packet_processor.cpp; path = src/turbo_jpeg_rgb_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		27D5EE76DA164466B0FB8376 /* transfer_pool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = transfer_pool.h; path = include/internal/libfreenect2/usb/transfer_pool.h; sourceTree = SOURCE_ROOT; };
+		36CAF7A726654BD8BE1A1253 /* resources.inc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = resources.inc.h; sourceTree = SOURCE_ROOT; };
+		402B3ED799604A6BA859A321 /* Protonect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Protonect; sourceTree = BUILT_PRODUCTS_DIR; };
+		40674ED628324324B072503F /* threading.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = threading.h; path = include/internal/libfreenect2/threading.h; sourceTree = SOURCE_ROOT; };
+		40B3D15976B7493A9F011D01 /* OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		42D08FC581224DBB944E0F84 /* viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = examples/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		46E51080ADBA4D9893517BFC /* command.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = command.h; path = include/internal/libfreenect2/protocol/command.h; sourceTree = SOURCE_ROOT; };
+		5521ABD2E08641FDB6312F8C /* frame_listener.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = frame_listener.hpp; path = include/libfreenect2/frame_listener.hpp; sourceTree = SOURCE_ROOT; };
+		5B728E63C6924F06AF9FE141 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		642CF87EECA74857A2BD63C9 /* Protonect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Protonect.cpp; path = examples/Protonect.cpp; sourceTree = SOURCE_ROOT; };
+		6639D1E4BF584AA38C45FDBE /* transfer_pool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = transfer_pool.cpp; path = src/transfer_pool.cpp; sourceTree = SOURCE_ROOT; };
+		67DF0A68D4E14DDF92C6DDCB /* CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		76F6F4AD54234868A8D56715 /* frame_listener_impl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = frame_listener_impl.cpp; path = src/frame_listener_impl.cpp; sourceTree = SOURCE_ROOT; };
+		77A4F391CFEE45B48FA3505E /* registration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = registration.cpp; path = src/registration.cpp; sourceTree = SOURCE_ROOT; };
+		78C2C67A6BA24DC2B31C9DA3 /* rgb_packet_processor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = rgb_packet_processor.h; path = include/internal/libfreenect2/rgb_packet_processor.h; sourceTree = SOURCE_ROOT; };
+		7A20CCE8DEC041928CDC4C9D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7B180AAB2D2D48FFB2AE9BD8 /* packet_processor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = packet_processor.h; path = include/internal/libfreenect2/packet_processor.h; sourceTree = SOURCE_ROOT; };
+		7D3A55619CCA4DF5B6DB09F3 /* opengl_depth_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opengl_depth_packet_processor.cpp; path = src/opengl_depth_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		7EF8FC97AE4C41FAB1DDF49F /* VideoToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = "<absolute>"; };
+		7FB87129FF95423F97834753 /* packet_pipeline.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = packet_pipeline.h; path = include/libfreenect2/packet_pipeline.h; sourceTree = SOURCE_ROOT; };
+		816150EF91854566AA5A7A36 /* usb_control.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = usb_control.cpp; path = src/usb_control.cpp; sourceTree = SOURCE_ROOT; };
+		82D76A740E0C47379A9D7CD5 /* led_settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = led_settings.h; path = include/libfreenect2/led_settings.h; sourceTree = SOURCE_ROOT; };
+		88165E54278D4F8FBA08233B /* export.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = export.h; path = libfreenect2/export.h; sourceTree = SOURCE_ROOT; };
+		89A67B0EA9454053A766F2C5 /* resource.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = resource.cpp; path = src/resource.cpp; sourceTree = SOURCE_ROOT; };
+		8F95842DA91040E28272CFB8 /* flextGL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = flextGL.cpp; path = src/flextGL.cpp; sourceTree = SOURCE_ROOT; };
+		916BFFF484B248798211399F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = examples/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		94E8E28DD6BC49EE848B2181 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9972D68578524A139C229101 /* resources.inc.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = resources.inc.h.rule; sourceTree = SOURCE_ROOT; };
+		9CE34EF59F424C6E8CB38CEB /* generate_resources.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generate_resources.cpp; path = tools/generate_resources.cpp; sourceTree = SOURCE_ROOT; };
+		A48F9F4FD74B41C493E1DB05 /* packet_pipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = packet_pipeline.cpp; path = src/packet_pipeline.cpp; sourceTree = SOURCE_ROOT; };
+		A8233260E8864F2E8567676C /* registration.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = registration.h; path = include/libfreenect2/registration.h; sourceTree = SOURCE_ROOT; };
+		AAD50965258343CAB9E559D9 /* allocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = allocator.h; path = include/internal/libfreenect2/allocator.h; sourceTree = SOURCE_ROOT; };
+		AB35EC4EC9194F8B8401F0B8 /* vt_rgb_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vt_rgb_packet_processor.cpp; path = src/vt_rgb_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		B00105C8E31B4938B97AB84D /* async_packet_processor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = async_packet_processor.h; path = include/internal/libfreenect2/async_packet_processor.h; sourceTree = SOURCE_ROOT; };
+		B1D42CF010CB4AD7B97F800F /* libfreenect2.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = libfreenect2.hpp; path = include/libfreenect2/libfreenect2.hpp; sourceTree = SOURCE_ROOT; };
+		B245A2AF128843FAA83BA394 /* logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = logging.h; path = include/internal/libfreenect2/logging.h; sourceTree = SOURCE_ROOT; };
+		BAD191AA8575412796C17521 /* opencl_depth_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opencl_depth_packet_processor.cpp; path = src/opencl_depth_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		BAE3579FEBF84A1786480319 /* CoreFoundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		BCF52641F59043928B504A25 /* depth_packet_stream_parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = depth_packet_stream_parser.cpp; path = src/depth_packet_stream_parser.cpp; sourceTree = SOURCE_ROOT; };
+		C70CB214810D45E7B394A939 /* allocator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = allocator.cpp; path = src/allocator.cpp; sourceTree = SOURCE_ROOT; };
+		C7B34D5A6C774C35863995BB /* command_transaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = command_transaction.cpp; path = src/command_transaction.cpp; sourceTree = SOURCE_ROOT; };
+		C9952F3BB68141AEBF612ED1 /* cpu_depth_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cpu_depth_packet_processor.cpp; path = src/cpu_depth_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		CBFFE560747D468AA66632CE /* usb_control.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = usb_control.h; path = include/internal/libfreenect2/protocol/usb_control.h; sourceTree = SOURCE_ROOT; };
+		CCC33D511F0E4FEBA4E6889C /* depth_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = depth_packet_processor.cpp; path = src/depth_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		CDFE52CD7A694FCB82C9D906 /* freenect2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = freenect2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D6FB2B46E8478E801C96DF /* frame_listener_impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = frame_listener_impl.h; path = include/libfreenect2/frame_listener_impl.h; sourceTree = SOURCE_ROOT; };
+		DB71AF8C85834668863085DF /* rgb_packet_processor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rgb_packet_processor.cpp; path = src/rgb_packet_processor.cpp; sourceTree = SOURCE_ROOT; };
+		DDFB789B820A4650BBE72F94 /* CoreMedia.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = "<absolute>"; };
+		E528389FCB504A6D93460658 /* command_transaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = command_transaction.h; path = include/internal/libfreenect2/protocol/command_transaction.h; sourceTree = SOURCE_ROOT; };
+		E5551808DB644F8AAD679078 /* event_loop.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = event_loop.h; path = include/internal/libfreenect2/usb/event_loop.h; sourceTree = SOURCE_ROOT; };
+		E9697B63A8364DE98F84C4A2 /* depth_packet_stream_parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = depth_packet_stream_parser.h; path = include/internal/libfreenect2/depth_packet_stream_parser.h; sourceTree = SOURCE_ROOT; };
+		E9F7F53FF60C498DB92269FD /* flextGL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = flextGL.cpp; path = src/flextGL.cpp; sourceTree = SOURCE_ROOT; };
+		F152A8971D2B479FADE1D56C /* logger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = logger.h; path = include/libfreenect2/logger.h; sourceTree = SOURCE_ROOT; };
+		F29FD5C4F933464CB8C67721 /* event_loop.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = event_loop.cpp; path = src/event_loop.cpp; sourceTree = SOURCE_ROOT; };
+		F41659E463B74F8D98E1E831 /* tinythread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinythread.cpp; path = src/tinythread/tinythread.cpp; sourceTree = SOURCE_ROOT; };
+		F6CAEB99594D42719BCFBC7A /* response.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = response.h; path = include/internal/libfreenect2/protocol/response.h; sourceTree = SOURCE_ROOT; };
+		FBB1C9FBD0844CB6861EFCAC /* generate_resources_tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = generate_resources_tool; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25F8296308C449B480F72F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		869F697EF55446CD8C30BBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79B44C3A2C441D7AB2AC80F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		175151E60E1A48DA9A26C92E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD50965258343CAB9E559D9 /* allocator.h */,
+				B00105C8E31B4938B97AB84D /* async_packet_processor.h */,
+				09396C6089114EF9B2FB63C3 /* depth_packet_processor.h */,
+				E9697B63A8364DE98F84C4A2 /* depth_packet_stream_parser.h */,
+				B245A2AF128843FAA83BA394 /* logging.h */,
+				7B180AAB2D2D48FFB2AE9BD8 /* packet_processor.h */,
+				46E51080ADBA4D9893517BFC /* command.h */,
+				E528389FCB504A6D93460658 /* command_transaction.h */,
+				F6CAEB99594D42719BCFBC7A /* response.h */,
+				CBFFE560747D468AA66632CE /* usb_control.h */,
+				1AE7C53597034224BFEED6E6 /* resource.h */,
+				78C2C67A6BA24DC2B31C9DA3 /* rgb_packet_processor.h */,
+				1AF7699665DA4996A55CD7E2 /* rgb_packet_stream_parser.h */,
+				40674ED628324324B072503F /* threading.h */,
+				E5551808DB644F8AAD679078 /* event_loop.h */,
+				27D5EE76DA164466B0FB8376 /* transfer_pool.h */,
+				161C0A48FBF74525B2C23921 /* color_settings.h */,
+				5521ABD2E08641FDB6312F8C /* frame_listener.hpp */,
+				D3D6FB2B46E8478E801C96DF /* frame_listener_impl.h */,
+				82D76A740E0C47379A9D7CD5 /* led_settings.h */,
+				B1D42CF010CB4AD7B97F800F /* libfreenect2.hpp */,
+				F152A8971D2B479FADE1D56C /* logger.h */,
+				7FB87129FF95423F97834753 /* packet_pipeline.h */,
+				A8233260E8864F2E8567676C /* registration.h */,
+				13361D229927437BB4812738 /* config.h */,
+				88165E54278D4F8FBA08233B /* export.h */,
+				36CAF7A726654BD8BE1A1253 /* resources.inc.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1D62B1D63C9246EF921E45F9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CE34EF59F424C6E8CB38CEB /* generate_resources.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2E8418134A634C27B12CF88D = {
+			isa = PBXGroup;
+			children = (
+				38E2A47AFF834458B297CA5C /* generate_resources_tool */,
+				EC7D24E5BEF44743B4859D93 /* freenect2 */,
+				458C94FE750E4CF4BEABEC0F /* ALL_BUILD */,
+				9F608C585E5D4677AF7F2FCE /* Protonect */,
+				D78E51DED9874344A87065FD /* Products */,
+				51E6BB2588F941B688255FF9 /* Frameworks */,
+				E7BCC34C51D84DB8B8272F19 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		38E2A47AFF834458B297CA5C /* generate_resources_tool */ = {
+			isa = PBXGroup;
+			children = (
+				1D62B1D63C9246EF921E45F9 /* Source Files */,
+				94E8E28DD6BC49EE848B2181 /* CMakeLists.txt */,
+			);
+			name = generate_resources_tool;
+			sourceTree = "<group>";
+		};
+		458C94FE750E4CF4BEABEC0F /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C5DD946F59E34295B2FFC7CF /* CMake Rules */,
+				7A20CCE8DEC041928CDC4C9D /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		4E33C009FD3F4D37AF8359AD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				9972D68578524A139C229101 /* resources.inc.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		51E6BB2588F941B688255FF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40B3D15976B7493A9F011D01 /* OpenGL.framework */,
+				7EF8FC97AE4C41FAB1DDF49F /* VideoToolbox.framework */,
+				BAE3579FEBF84A1786480319 /* CoreFoundation.framework */,
+				DDFB789B820A4650BBE72F94 /* CoreMedia.framework */,
+				67DF0A68D4E14DDF92C6DDCB /* CoreVideo.framework */,
+				07068CF26A7545528DB01185 /* OpenCL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F608C585E5D4677AF7F2FCE /* Protonect */ = {
+			isa = PBXGroup;
+			children = (
+				B419A5667AA2478E9AC966DC /* Source Files */,
+				916BFFF484B248798211399F /* CMakeLists.txt */,
+			);
+			name = Protonect;
+			sourceTree = "<group>";
+		};
+		B419A5667AA2478E9AC966DC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				642CF87EECA74857A2BD63C9 /* Protonect.cpp */,
+				42D08FC581224DBB944E0F84 /* viewer.cpp */,
+				8F95842DA91040E28272CFB8 /* flextGL.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C5DD946F59E34295B2FFC7CF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D78E51DED9874344A87065FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				402B3ED799604A6BA859A321 /* Protonect */,
+				CDFE52CD7A694FCB82C9D906 /* freenect2.framework */,
+				FBB1C9FBD0844CB6861EFCAC /* generate_resources_tool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D97DF27375804E4E8D165EE5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C70CB214810D45E7B394A939 /* allocator.cpp */,
+				C7B34D5A6C774C35863995BB /* command_transaction.cpp */,
+				C9952F3BB68141AEBF612ED1 /* cpu_depth_packet_processor.cpp */,
+				CCC33D511F0E4FEBA4E6889C /* depth_packet_processor.cpp */,
+				BCF52641F59043928B504A25 /* depth_packet_stream_parser.cpp */,
+				F29FD5C4F933464CB8C67721 /* event_loop.cpp */,
+				E9F7F53FF60C498DB92269FD /* flextGL.cpp */,
+				76F6F4AD54234868A8D56715 /* frame_listener_impl.cpp */,
+				05A077ABE8D24E7280B601C6 /* libfreenect2.cpp */,
+				1808DAAE150C491196138B2D /* logging.cpp */,
+				BAD191AA8575412796C17521 /* opencl_depth_packet_processor.cpp */,
+				062BEDC8C32A4B829CFC84FE /* opencl_kde_depth_packet_processor.cpp */,
+				7D3A55619CCA4DF5B6DB09F3 /* opengl_depth_packet_processor.cpp */,
+				A48F9F4FD74B41C493E1DB05 /* packet_pipeline.cpp */,
+				77A4F391CFEE45B48FA3505E /* registration.cpp */,
+				89A67B0EA9454053A766F2C5 /* resource.cpp */,
+				DB71AF8C85834668863085DF /* rgb_packet_processor.cpp */,
+				200A1019E08547BFB08BE637 /* rgb_packet_stream_parser.cpp */,
+				F41659E463B74F8D98E1E831 /* tinythread.cpp */,
+				6639D1E4BF584AA38C45FDBE /* transfer_pool.cpp */,
+				2047FD348D88452AA721C066 /* turbo_jpeg_rgb_packet_processor.cpp */,
+				816150EF91854566AA5A7A36 /* usb_control.cpp */,
+				AB35EC4EC9194F8B8401F0B8 /* vt_rgb_packet_processor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E7BCC34C51D84DB8B8272F19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EC7D24E5BEF44743B4859D93 /* freenect2 */ = {
+			isa = PBXGroup;
+			children = (
+				175151E60E1A48DA9A26C92E /* Header Files */,
+				D97DF27375804E4E8D165EE5 /* Source Files */,
+				4E33C009FD3F4D37AF8359AD /* CMake Rules */,
+				5B728E63C6924F06AF9FE141 /* CMakeLists.txt */,
+			);
+			name = freenect2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C42B4F4D7786402882487C60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C53E80C5444365A9E3EF33 /* allocator.h in Headers */,
+				B44C0594CAEB493CBB10E078 /* async_packet_processor.h in Headers */,
+				4633857A75794B659CB55D11 /* depth_packet_processor.h in Headers */,
+				9B35E8820BFA4E719B840521 /* depth_packet_stream_parser.h in Headers */,
+				6B14C275F94A4074B7942DEA /* logging.h in Headers */,
+				C567D88FA8934DDC9918FF6C /* packet_processor.h in Headers */,
+				904DD00A46A8429BA4092344 /* command.h in Headers */,
+				EF3B38648AEA4C61A06F5D62 /* command_transaction.h in Headers */,
+				42326B68E21F4FD78C9555F6 /* response.h in Headers */,
+				13212334C187429BA7FB3614 /* usb_control.h in Headers */,
+				7BFF5EC6CF834F4EB7BCC563 /* resource.h in Headers */,
+				8709C415DFB64436A829AF1F /* rgb_packet_processor.h in Headers */,
+				481F544F107140519A0128B7 /* rgb_packet_stream_parser.h in Headers */,
+				18390FA697D3473B96BEFECD /* threading.h in Headers */,
+				ABA53D3B85484E2896E7B286 /* event_loop.h in Headers */,
+				3D50B8666C4E4DB994C4823D /* transfer_pool.h in Headers */,
+				48E3E7B3BC134B378CADA75B /* color_settings.h in Headers */,
+				63EA6B32855A40F4A51DFE85 /* frame_listener.hpp in Headers */,
+				01543992C23D4B3CA6257620 /* frame_listener_impl.h in Headers */,
+				8FBD0DC9706340FA85B5E3A3 /* led_settings.h in Headers */,
+				F4BA470EE5064B28A2807939 /* libfreenect2.hpp in Headers */,
+				8116428955AD4BB1A9AD8792 /* logger.h in Headers */,
+				890A973967DC4ADEAF8CD70A /* packet_pipeline.h in Headers */,
+				03C064BB12844A01A68A5446 /* registration.h in Headers */,
+				5E8541E7BAEC4688BED66D48 /* config.h in Headers */,
+				C02FE0D13973456C9B4132E7 /* export.h in Headers */,
+				BE0607C6C54A43FF8AED12FD /* resources.inc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21660968B3C74A4998023DD0 /* freenect2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B841A580EDE1487C96D0A73F /* Build configuration list for PBXNativeTarget "freenect2" */;
+			buildPhases = (
+				73230FD2C3ECA91CA658DCF5 /* Generate resources.inc.h */,
+				C42B4F4D7786402882487C60 /* Headers */,
+				A040F859FD344F4584ED9DA8 /* Sources */,
+				25F8296308C449B480F72F90 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E7E270EA1D430180393B82 /* PBXTargetDependency */,
+				D52BBABD162A4A75A5DAA804 /* PBXTargetDependency */,
+			);
+			name = freenect2;
+			productName = freenect2;
+			productReference = CDFE52CD7A694FCB82C9D906 /* freenect2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		951DAD70300346A2B81CCA33 /* generate_resources_tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FDC497BB2654D0DA14BC197 /* Build configuration list for PBXNativeTarget "generate_resources_tool" */;
+			buildPhases = (
+				AFED86DFC29C420694FE520B /* Sources */,
+				D79B44C3A2C441D7AB2AC80F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560BAB9F9B2A4EB8809DE40D /* PBXTargetDependency */,
+			);
+			name = generate_resources_tool;
+			productName = generate_resources_tool;
+			productReference = FBB1C9FBD0844CB6861EFCAC /* generate_resources_tool */;
+			productType = "com.apple.product-type.tool";
+		};
+		EC7E95368A5F4DCFAEFCD83F /* Protonect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3488D2ED18846B98965B157 /* Build configuration list for PBXNativeTarget "Protonect" */;
+			buildPhases = (
+				21AC41E37C81436D9DFF3F13 /* Sources */,
+				869F697EF55446CD8C30BBF1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BC4B5B192CF4D8FB62E4B4E /* PBXTargetDependency */,
+			);
+			name = Protonect;
+			productName = Protonect;
+			productReference = 402B3ED799604A6BA859A321 /* Protonect */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		538CF914E5754FD69BB6B542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1520;
+			};
+			buildConfigurationList = DC07BEFCEA894CD69290A604 /* Build configuration list for PBXProject "libfreenect2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E8418134A634C27B12CF88D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C4D3832E9DD43A8A5C10B68 /* ALL_BUILD */,
+				EC7E95368A5F4DCFAEFCD83F /* Protonect */,
+				3C6EDD8D32CE456A99A54488 /* ZERO_CHECK */,
+				21660968B3C74A4998023DD0 /* freenect2 */,
+				951DAD70300346A2B81CCA33 /* generate_resources_tool */,
+				25A86AAC58A745BD9DCBE082 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C4E32CD67A951C9F91189A3 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/anderson/Projects/KinectV2/libfreenect2/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73230FD2C3ECA91CA658DCF5 /* Generate resources.inc.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/anderson/Projects/KinectV2/libfreenect2/bin/Debug/generate_resources_tool,
+				/Users/anderson/Projects/KinectV2/libfreenect2/bin/MinSizeRel/generate_resources_tool,
+				/Users/anderson/Projects/KinectV2/libfreenect2/bin/RelWithDebInfo/generate_resources_tool,
+				/Users/anderson/Projects/KinectV2/libfreenect2/bin/Release/generate_resources_tool,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/opencl_depth_packet_processor.cl,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/opencl_kde_depth_packet_processor.cl,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/shader/debug.fs,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/shader/default.vs,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/shader/filter1.fs,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/shader/filter2.fs,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/shader/stage1.fs,
+				/Users/anderson/Projects/KinectV2/libfreenect2/src/shader/stage2.fs,
+			);
+			name = "Generate resources.inc.h";
+			outputPaths = (
+				/Users/anderson/Projects/KinectV2/libfreenect2/resources.inc.h,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /Users/anderson/Projects/KinectV2/libfreenect2/bin/Debug/generate_resources_tool /Users/anderson/Projects/KinectV2/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl > /Users/anderson/Projects/KinectV2/libfreenect2/resources.inc.h\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /Users/anderson/Projects/KinectV2/libfreenect2/bin/Release/generate_resources_tool /Users/anderson/Projects/KinectV2/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl > /Users/anderson/Projects/KinectV2/libfreenect2/resources.inc.h\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /Users/anderson/Projects/KinectV2/libfreenect2/bin/MinSizeRel/generate_resources_tool /Users/anderson/Projects/KinectV2/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl > /Users/anderson/Projects/KinectV2/libfreenect2/resources.inc.h\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /Users/anderson/Projects/KinectV2/libfreenect2/bin/RelWithDebInfo/generate_resources_tool /Users/anderson/Projects/KinectV2/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl > /Users/anderson/Projects/KinectV2/libfreenect2/resources.inc.h\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  /usr/local/Cellar/cmake/3.28.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E94F6B11945791DCD79B2DA5 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/anderson/Projects/KinectV2/libfreenect2/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  make -f /Users/anderson/Projects/KinectV2/libfreenect2/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  make -f /Users/anderson/Projects/KinectV2/libfreenect2/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  make -f /Users/anderson/Projects/KinectV2/libfreenect2/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/anderson/Projects/KinectV2/libfreenect2\n  make -f /Users/anderson/Projects/KinectV2/libfreenect2/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21AC41E37C81436D9DFF3F13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E8A4A06BA747D49079AD4E /* Protonect.cpp in Sources */,
+				650B81E1E0104C9A830C39DB /* viewer.cpp in Sources */,
+				0931CA21210349348BF7ECE5 /* flextGL.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A040F859FD344F4584ED9DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF6E50DEC65643469F124149 /* allocator.cpp in Sources */,
+				E7FA54001335466F81C5FD25 /* command_transaction.cpp in Sources */,
+				BCC33E03B0154423B347E61A /* cpu_depth_packet_processor.cpp in Sources */,
+				C92FBDAE7F634DEC84F7A36F /* depth_packet_processor.cpp in Sources */,
+				CC598D749C2E4364B6E6AF20 /* depth_packet_stream_parser.cpp in Sources */,
+				3CC5BCB5B400442A86B60ABB /* event_loop.cpp in Sources */,
+				806DCE0070F0449EBEA79F74 /* flextGL.cpp in Sources */,
+				9AB2206FA1184983BEAF57DA /* frame_listener_impl.cpp in Sources */,
+				8F252A4D0D2842F885724617 /* libfreenect2.cpp in Sources */,
+				333A862486444DF29C7868EF /* logging.cpp in Sources */,
+				C0FCD1A70B5E49F891FB7564 /* opencl_depth_packet_processor.cpp in Sources */,
+				BF3173EB61AB4D2688219816 /* opencl_kde_depth_packet_processor.cpp in Sources */,
+				A6F26EDB01C64C129F34DFA6 /* opengl_depth_packet_processor.cpp in Sources */,
+				989962ACCA12420ABC2DE93C /* packet_pipeline.cpp in Sources */,
+				F75D53511B984D78ACE7BCEC /* registration.cpp in Sources */,
+				62E35F2973C046A3AA7709C0 /* resource.cpp in Sources */,
+				69A2C3DB19124FE893BB7971 /* rgb_packet_processor.cpp in Sources */,
+				27A5C69350994136B0B00F38 /* rgb_packet_stream_parser.cpp in Sources */,
+				CD1DDF5CE64547B784BCA0C1 /* tinythread.cpp in Sources */,
+				4D2BCFAA98EF432A821B2272 /* transfer_pool.cpp in Sources */,
+				BBD52EF34F344A98972E6F0B /* turbo_jpeg_rgb_packet_processor.cpp in Sources */,
+				0738DF966C2E47AF9345000B /* usb_control.cpp in Sources */,
+				391A376440E24FD1B0E6A0A1 /* vt_rgb_packet_processor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFED86DFC29C420694FE520B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1E49167F6348F9831A16B5 /* generate_resources.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FEE4382CE644862A2DC7C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7E95368A5F4DCFAEFCD83F /* Protonect */;
+			targetProxy = B9ACE45DFC6548F5BB16BF59 /* PBXContainerItemProxy */;
+		};
+		18E7E270EA1D430180393B82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951DAD70300346A2B81CCA33 /* generate_resources_tool */;
+			targetProxy = FD02D7B86A084B0EB4FAF4F7 /* PBXContainerItemProxy */;
+		};
+		26CF14C15B9B48E7A83174B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21660968B3C74A4998023DD0 /* freenect2 */;
+			targetProxy = 85CF49727D874EC19A42F00A /* PBXContainerItemProxy */;
+		};
+		560BAB9F9B2A4EB8809DE40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C6EDD8D32CE456A99A54488 /* ZERO_CHECK */;
+			targetProxy = 9C7B2C1B81E74DEDB4A58223 /* PBXContainerItemProxy */;
+		};
+		8BC4B5B192CF4D8FB62E4B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21660968B3C74A4998023DD0 /* freenect2 */;
+			targetProxy = AE0F4F9FE4AD44339AFDB908 /* PBXContainerItemProxy */;
+		};
+		A51DAE44C49E4BE1958F70EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C4D3832E9DD43A8A5C10B68 /* ALL_BUILD */;
+			targetProxy = 4282E7DDA4C244A5BD9F805C /* PBXContainerItemProxy */;
+		};
+		D46FFFB8C66443368719D0C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 951DAD70300346A2B81CCA33 /* generate_resources_tool */;
+			targetProxy = F5CBBC11D16D4648A6050276 /* PBXContainerItemProxy */;
+		};
+		D52BBABD162A4A75A5DAA804 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C6EDD8D32CE456A99A54488 /* ZERO_CHECK */;
+			targetProxy = 390FC41A3FDD4600A8A3E29B /* PBXContainerItemProxy */;
+		};
+		F3D200B075224B1E97065727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C6EDD8D32CE456A99A54488 /* ZERO_CHECK */;
+			targetProxy = 5F880249DF53432A8B3EC3A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02069C38392F47B8B9C10BD8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		114EED4FB1014A95BDB09308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/lib/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = 0.2.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					freenect2_EXPORTS,
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/anderson/Projects/KinectV2/libfreenect2/CMakeFiles/freenect2.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freenect2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/freenect2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		1281B37F69B4430D989040D7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/lib/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = 0.2.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					freenect2_EXPORTS,
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/anderson/Projects/KinectV2/libfreenect2/CMakeFiles/freenect2.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freenect2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/freenect2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		14A1EF5CFC4746DA8F519142 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		2818B785E8EA4692863956F7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = generate_resources_tool;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/generate_resources_tool.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		44DE0B9A48FE4D3B90313442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/Release,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"'EXAMPLES_WITH_OPENGL_SUPPORT=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/examples/../src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/Release,
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/Release/freenect2.framework/Versions/C/freenect2,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Protonect;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/Protonect.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		4A5E058A29FB4F8B831F0E53 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/anderson/Projects/KinectV2/libfreenect2/build;
+			};
+			name = MinSizeRel;
+		};
+		57FC004C6BBD4F1E85E810CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		6266B09888D94303922F9015 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/lib/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = 0.2.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					freenect2_EXPORTS,
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/anderson/Projects/KinectV2/libfreenect2/CMakeFiles/freenect2.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freenect2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/freenect2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		6D6C75154E5B4F04895D99DF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/RelWithDebInfo,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"'EXAMPLES_WITH_OPENGL_SUPPORT=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/examples/../src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/RelWithDebInfo,
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/RelWithDebInfo/freenect2.framework/Versions/C/freenect2,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Protonect;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/Protonect.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		6E9912698D0D4A56949BC48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		6FF275963E464E6A89899C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/lib/Release;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = 0.2.0;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = C;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					freenect2_EXPORTS,
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/anderson/Projects/KinectV2/libfreenect2/CMakeFiles/freenect2.dir/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+					"-fPIC",
+					"-fvisibility=hidden",
+					"-fvisibility-inlines-hidden",
+				);
+				OTHER_LDFLAGS = (
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freenect2;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/freenect2.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		764BB538CF3444C0BDFE2F3D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		89A5E359DEDF44D4A33DF373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/Debug,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"'EXAMPLES_WITH_OPENGL_SUPPORT=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/examples/../src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/Debug,
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = " -Wall    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/Debug/freenect2.framework/Versions/C/freenect2,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Protonect;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/Protonect.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		8F3D19B6F9C149A79EBBD143 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = generate_resources_tool;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/generate_resources_tool.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		92C3556E890F427888EA6554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = generate_resources_tool;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/generate_resources_tool.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		9BBE5BBC6E1C43318945F659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		9FB2984C7E904EFDB4B79F20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = generate_resources_tool;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/generate_resources_tool.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		ABB1D38AEC0A4672A0AB0098 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		BF4C2F60EC06431FB2B21ACA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		C8BFD1FFE7BF404F88CB8384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		E86B282AA0154151926E91DF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/anderson/Projects/KinectV2/libfreenect2/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/MinSizeRel,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					RESOURCES_INC,
+					"'EXAMPLES_WITH_OPENGL_SUPPORT=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/include/internal,
+					/Users/anderson/Projects/KinectV2/libfreenect2,
+					/Users/anderson/Projects/KinectV2/libfreenect2/src/tinythread,
+					"/usr/local/Cellar/libusb/1.0.27/include/libusb-1.0",
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.9/include,
+					/Users/anderson/Projects/KinectV2/libfreenect2/examples/../src,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/MinSizeRel,
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/anderson/Projects/KinectV2/libfreenect2/lib/MinSizeRel/freenect2.framework/Versions/C/freenect2,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"/usr/local/Cellar/libusb/1.0.27/lib/libusb-1.0.dylib",
+					"-lpthread",
+					"-framework",
+					VideoToolbox,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					/usr/local/lib/libturbojpeg.dylib,
+					/usr/local/Cellar/glfw/3.3.9/lib/libglfw.dylib,
+					"-framework",
+					OpenGL,
+					"-framework",
+					OpenCL,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Protonect;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/anderson/Projects/KinectV2/libfreenect2/build/Protonect.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E93E03EF02ED43D284BE55B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SYMROOT = /Users/anderson/Projects/KinectV2/libfreenect2/build;
+			};
+			name = Debug;
+		};
+		ED98AAFB923D42B6B0E4930E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/anderson/Projects/KinectV2/libfreenect2/build;
+			};
+			name = Release;
+		};
+		EE236F770D64466295CD6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		EFE784101E81488BBA4409FB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		F3C7CA0F9AFD49329E99A098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		FC51B955D5234C2AAFDA5DA2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/anderson/Projects/KinectV2/libfreenect2/build;
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FA274D85031405982E383F9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FC004C6BBD4F1E85E810CA /* Debug */,
+				F3C7CA0F9AFD49329E99A098 /* Release */,
+				BF4C2F60EC06431FB2B21ACA /* MinSizeRel */,
+				EFE784101E81488BBA4409FB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9FDC497BB2654D0DA14BC197 /* Build configuration list for PBXNativeTarget "generate_resources_tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB2984C7E904EFDB4B79F20 /* Debug */,
+				92C3556E890F427888EA6554 /* Release */,
+				2818B785E8EA4692863956F7 /* MinSizeRel */,
+				8F3D19B6F9C149A79EBBD143 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3488D2ED18846B98965B157 /* Build configuration list for PBXNativeTarget "Protonect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89A5E359DEDF44D4A33DF373 /* Debug */,
+				44DE0B9A48FE4D3B90313442 /* Release */,
+				E86B282AA0154151926E91DF /* MinSizeRel */,
+				6D6C75154E5B4F04895D99DF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B841A580EDE1487C96D0A73F /* Build configuration list for PBXNativeTarget "freenect2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114EED4FB1014A95BDB09308 /* Debug */,
+				6FF275963E464E6A89899C37 /* Release */,
+				6266B09888D94303922F9015 /* MinSizeRel */,
+				1281B37F69B4430D989040D7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1E801B7B0824EE988E00A19 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBE5BBC6E1C43318945F659 /* Debug */,
+				C8BFD1FFE7BF404F88CB8384 /* Release */,
+				02069C38392F47B8B9C10BD8 /* MinSizeRel */,
+				ABB1D38AEC0A4672A0AB0098 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC07BEFCEA894CD69290A604 /* Build configuration list for PBXProject "libfreenect2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E93E03EF02ED43D284BE55B7 /* Debug */,
+				ED98AAFB923D42B6B0E4930E /* Release */,
+				4A5E058A29FB4F8B831F0E53 /* MinSizeRel */,
+				FC51B955D5234C2AAFDA5DA2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6F9ACA98CF345CDA399D1E2 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE236F770D64466295CD6D37 /* Debug */,
+				6E9912698D0D4A56949BC48B /* Release */,
+				764BB538CF3444C0BDFE2F3D /* MinSizeRel */,
+				14A1EF5CFC4746DA8F519142 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 538CF914E5754FD69BB6B542 /* Project object */;
+}

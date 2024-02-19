@@ -1119,15 +1119,15 @@ PacketPipeline *createDefaultPacketPipeline()
       LOG_WARNING << "`" << pipeline_env << "' pipeline is not available.";
   }
 
-#if defined(LIBFREENECT2_WITH_OPENGL_SUPPORT)
-  return new OpenGLPacketPipeline();
-#elif defined(LIBFREENECT2_WITH_CUDA_SUPPORT)
-  return new CudaPacketPipeline();
-#elif defined(LIBFREENECT2_WITH_OPENCL_SUPPORT)
-  return new OpenCLPacketPipeline();
-#else
+//#if defined(LIBFREENECT2_WITH_OPENGL_SUPPORT)
+//  return new OpenGLPacketPipeline();
+//#elif defined(LIBFREENECT2_WITH_CUDA_SUPPORT)
+//  return new CudaPacketPipeline();
+//#elif defined(LIBFREENECT2_WITH_OPENCL_SUPPORT)
+//  return new OpenCLPacketPipeline();
+//#else
   return new CpuPacketPipeline();
-#endif
+//#endif
 }
 
 Freenect2::Freenect2(void *usb_context) :

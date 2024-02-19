@@ -159,3 +159,17 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+# CMake
+CMakeFiles/
+CMakeScripts/
+doc/
+examples/
+CMakeCache.txt
+cmake_install.cmake
+freenect2.pc
+freenect2Config*.cmake
+resources.inc.h
+
+## User settings
+xcuserdata/
